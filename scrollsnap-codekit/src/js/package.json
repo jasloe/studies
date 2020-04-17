@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "intersection-observer": "^0.8.0",
+    "scrollama": "^2.2.1"
+  }
+}
