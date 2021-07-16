@@ -1,0 +1,10 @@
+{
+  "name": "vertical-rhythm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "mq-sass": "0.8.0",
+    "prettier": "2.3.2"
+  }
+}

@@ -1,0 +1,128 @@
+/* Fonts */
+@mixin sabon-regular {
+  font-family: linotype-sabon, sans-serif;
+}
+
+@mixin nimbus-regular {
+  font-family: nimbus-sans, sans-serif;
+}
+
+* {
+  font-family: Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-weight: 100 !important;
+}
+
+html {
+  font-size: 16px;
+}
+
+// body {
+//   background-size: 8px 8px;
+//   background-image: linear-gradient(to right, lightgray 1px, transparent 1px),
+//     linear-gradient(to bottom, red 1px, transparent 1px);
+// }
+
+body {
+  background-color: #f0f1f0;
+}
+
+.release-description {
+}
+
+p {
+  @include sabon-regular;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-top: 8px;
+  letter-spacing: -0.1px;
+}
+
+ul li {
+  @include sabon-regular;
+  font-size: 1rem;
+  list-style-type: none;
+}
+
+h1 {
+  @include sabon-regular;
+  font-size: 2.5rem;
+}
+
+h2,
+h3 {
+  @include nimbus-regular;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  color: #c8553d !important;
+}
+
+h3 {
+  // border-bottom: 1px solid black;
+  padding-bottom: 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.layout-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.release-summary {
+  margin-bottom: 1rem;
+}
+
+.release-meta {
+  display: flex;
+  flex-direction: column;
+  .pane {
+    flex-basis: 33.3%;
+    margin-bottom: 0.25rem;
+    background-color: #fff2e8;
+    padding: 2rem;
+  }
+  span {
+    @include nimbus-regular;
+    font-size: 1rem;
+    letter-spacing: -0.1px;
+    font-weight: 100 !important;
+    padding-left: 2rem;
+  }
+}
+
+.title-metadata {
+  margin-bottom: 1.5rem;
+  h2 {
+    color: #001b67;
+  }
+}
+
+.title h1,
+p {
+  color: #001b67;
+}
+
+.title h1 {
+  margin-bottom: 3rem;
+}
+
+.release-wrapper {
+  display: flex;
+  .release-description {
+    flex-basis: 60%;
+    padding: 3rem;
+    margin: 0.25rem;
+    background-color: #fff2e8;
+  }
+  .release-meta {
+    flex-basis: 40%;
+  }
+}
+
+/* baby powder: EEF0EB */
